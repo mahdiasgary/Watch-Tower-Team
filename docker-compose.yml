@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "0.0.0.0:27017:27017"
+    volumes:
+      - watchtower-data:/data/db
+
+  watchtower:
+    build: ./  # مسیر پروژه Watch-Tower که Dockerfile داخلش هست
+    container_name: watchtower
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/watchtower"
+    volumes:
+      - .:/app
+
+volumes:
+  watchtower-data:

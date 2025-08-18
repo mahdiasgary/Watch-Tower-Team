@@ -1,0 +1,9 @@
+/config/
+config/.env
+config/config.py
+
+database/
+*.pyc
+.yml
+.env
+config/config.py
