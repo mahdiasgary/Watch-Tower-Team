@@ -29,14 +29,14 @@ RUN go install github.com/tomnomnom/waybackurls@latest && \
     go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && \
     go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest && \
     go install github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest && \
+    go install github.com/tomnomnom/unfurl@latest && \
     go install github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest && \
+    go install github.com/ImAyrix/cut-cdn@latest && \
     go install github.com/ImAyrix/fallparams@latest && \
     go install github.com/iangcarroll/cookiemonster/cmd/cookiemonster@latest && \
     go install github.com/tomnomnom/anew@latest && \
     go install github.com/ffuf/ffuf/v2@latest && \
-    go install github.com/ImAyrix/cut-cdn@latest && \
     go install github.com/lc/gau/v2/cmd/gau@latest && \
-    go install github.com/tomnomnom/unfurl@latest && \
     go install github.com/projectdiscovery/notify/cmd/notify@latest
 
 # نصب massdns

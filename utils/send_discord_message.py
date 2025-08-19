@@ -116,5 +116,6 @@ def send_discord_message(subdomain, program, state, args):
 ⏰ {current_time()}"""
 
     command = f"echo subdomain.com | notify -mf '{message}'"
+    time.sleep(1)
 
     run_command_in_zsh(command)
