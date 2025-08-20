@@ -9,7 +9,11 @@ def initialize_db():
     db_config = config()
 
     connect(
-        db=db_config.get('DB_NAME', 'watch'),  # Database name, default to 'watch'
-        host=db_config.get('DB_HOST', '0.0.0.0'),  # Database host, default to localhost
-        port=db_config.get('DB_PORT', 27017),  # Database port, default to 27017
+        db=db_config.get('DB_NAME', 'watch'),
+        host=db_config.get('DB_HOST', '127.0.0.1'),
+        port=db_config.get('DB_PORT', 27017),
+        username=db_config.get('DB_USER', 'admin'),
+        password=db_config.get('DB_PASS', 'DSFgTRgvrtGBSEgeregSFvt3t34Ve347ui8i8752gDSGDBdsfsd6f216f1as6f1vfervgegRhe5'),
+        authentication_source='admin',  # حتما روی admin باشه
     )
+

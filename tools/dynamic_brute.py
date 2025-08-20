@@ -1,21 +1,3 @@
-# from utils import run_command_in_zsh
-
-
-
-# class Colors:
-#     GRAY = "\033[90m"
-#     RESET = "\033[0m"
-
-
-# def dynamic_brute(domain):
-#         wordListPath = f"wordlist/{domain}_dynamic_wordlist.txt"
-#         shuffledns_command = (
-#         f"shuffledns -list {wordListPath} -d {domain} -r ~/.resolvers -m $(which massdns) -mode resolve -t 100 "
-#         )
-#         print(f"{Colors.GRAY}Executing command: {shuffledns_command}{Colors.RESET}")
-#         result = run_command_in_zsh(shuffledns_command)
-
-#         return result
 import os
 import shutil
 from utils import run_command_in_zsh
